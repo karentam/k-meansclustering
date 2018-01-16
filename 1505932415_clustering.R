@@ -43,13 +43,17 @@ wssplot(df)
 
 # Exercise 2:
 #   * How many clusters does this method suggest? 
-#   * 3 clusters because the Within Groups Sum of Square has a larger drop from cluster 1 to cluster 3. After cluster 3, it drops a lot less. 
+#   * 3 clusters because the Within Groups Sum of Square has a larger drop from cluster 1 to cluster 3. 
+#   * After cluster 3, it drops a lot less. 
 
 #   * Why does this method work? What's the intuition behind it?
-#   * The plot can clearly show the suggestion of how many clusters. It is based on the difference of Within Groups Sum of Square between clusters. 
+#   * The plot can clearly show the suggestion of how many clusters. 
+#   * It is based on the difference of Within Groups Sum of Square between clusters. 
 
 #   * Look at the code for wssplot() and figure out how it works
-#   * The code is to create a plot of the total within-groups sums of squares against the number of clusters in a K-means solution. A bend in the graph suggests the appropriate number of clusters. 
+#   * The code is to create a plot of the total within-groups sums of squares 
+#   * against the number of clusters in a K-means solution. 
+#   * A bend in the graph suggests the appropriate number of clusters. 
 
 # Method 2: Use the NbClust library, which runs many experiments
 # and gives a distribution of potential number of clusters.
@@ -87,8 +91,10 @@ install.packages("flexclust")
 library(flexclust)
 randIndex(ct.km)
 
-# The adjusted Rand index provides a measure of the agreement between two partitions, adjusted for chance. It ranges from -1 (no agreement) to 1 (perfect agreement). 
-# Agreement between the wine varietal type and the cluster solution is 0.897495, meaning that it is a good clustering. 
+# The adjusted Rand index provides a measure of the agreement between two partitions, adjusted for chance. 
+# It ranges from -1 (no agreement) to 1 (perfect agreement). 
+# Agreement between the wine varietal type and the cluster solution is 0.897495, 
+# meaning that it is a good clustering. 
 
 
 # Exercise 6:
